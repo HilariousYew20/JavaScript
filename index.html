@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgür Blog</title>
+
+
+
+<!-- Some Css Code -->
+    <style>
+ #header div{ 
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    width: device-width;
+    height: 50px;
+}
+#header hr{
+    background-color: black;
+    width: device-width;
+    height: 10px;
+}
+#header h1{ 
+    text-align: center;
+}
+.ortala {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+}
+.button {
+    transition-duration: 0.4s;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+#hakimiz button{
+    position: absolute;
+    left: 100px;
+    right: 100px;
+}
+</style>
+</head>
+<body>
+    <div id="header">
+        <hr>
+        <h1>Özgür Blog</h1>
+        <hr>
+    </div>
+    <div id = "navbar">
+        <button class="button"onclick="yazdir('Hakkımızda','container', 'Hakkımızda', 'Bu site Ali İhsan Sarı tarafından yazılmıştır. Web tarafında ki öğrendiği konuları anladımı diye açılmıştır.')">Hakkımızda</button>
+        <button class="button" onclick="yazdir('Yardım','container', 'Yardım', 'Bu site görmüş olduğunuz üzere basittir. Ana Sayfada blgolar yazar ama şuanda deneme aşamasındadır.')">Yardım</button>
+    </div>
+    <div id = "container">
+    </div>
+    <hr style="background-color: black; width:device-width;height:10px;">
+    <div id="blog">
+        <h1 style="padding-left:10px;">Bloglar</h1>
+        <div id="blog1">
+            <h2>Python</h2>
+            Python, yeni yazılıma başlayacaklar için iyi bir yoldaştır. Kolay bir yazılım dilidir.<br>
+            Öğrenmesi sytax(sözdizimleri) diğer yazılım dillerine göre daha kolaydır. White space <br>
+            kulllanır. Yani bir tab olarak ayarlar fonksiyonları, döngüleri, koşulları vb.<br>
+            Örnek;<br>
+            <pre>
+            def HelloWorld():
+                print("Hello World")
+            </pre>
+            <strong>Çıktı olarak: "Hello World" alırız.</strong><br>
+            eğer HelloWorld fonksiyonunu böyle yapsaydık hata alırdık.<br>
+            <pre>
+                def HelloWorld():
+                print("Hello World")
+        </pre>
+            <strong>Çıktı olarak:</strong>
+            <pre>
+            File "main.py", line 2
+            print("Hello World")
+            ^
+        IndentationError: expected an indented block
+        </pre>
+        Bu hata kısa olarak HelloWorld fonksiyonunda blok yok demektir.<br>
+        Yapımcı: <strong>Ali ihsan Sarı</strong><br>
+        Yazılma Tarihi: 02/Kasım/2020
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
